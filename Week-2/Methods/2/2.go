@@ -1,4 +1,4 @@
-// Add Area() method to Rectangle struct
+// Add Perimeter() method to Rectangle struct
 package main
 import "fmt"
 
@@ -10,8 +10,8 @@ func new(length,breadth float64) Rectangle{
 		breadth : breadth,
 	}
 }
-func (r Rectangle) Area() float64{
-	return r.length * r.breadth
+func (r Rectangle) Perimeter() float64{
+	return 2 * (r.length + r.breadth)
 }
 func main(){
 	var l int
@@ -21,5 +21,5 @@ func main(){
 	fmt.Println("Enter breadth of Rectangle:")
 	fmt.Scanf("%d", &b)
 	rec:=new(float64(l),float64(b))
-	fmt.Println("Area of Rectangle:", rec.Area())
+	fmt.Println("Perimeter of Rectangle:", rec.Perimeter())
 }
