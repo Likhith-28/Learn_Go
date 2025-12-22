@@ -53,7 +53,7 @@ func addContact(){
 
 	var phoneNumber int
 	fmt.Println("Enter Phone Number :")
-	fmt.Println("%d", &phoneNumber)
+	fmt.Scanf("%d", &phoneNumber)
 
 	var email string
 	fmt.Println("Enter Email:")
